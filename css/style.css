@@ -1,0 +1,165 @@
+body{
+	background-color: rgb(255, 223, 171);
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	background-color: white;
+	margin: 0 auto; 
+	max-width: 1400px; 
+	margin-top: 50px; 
+	border-radius: 20px; 
+}
+
+.block{
+	display: flex; 
+	border: 2px solid  black;
+	margin-bottom: 50px;
+}
+
+.block:nth-child(1){
+	justify-content: center;
+	margin-top: 50px; 
+}
+
+.block:nth-child(2){
+	justify-content: flex-end;
+}
+
+.block:nth-child(3){
+	flex-direction: row-reverse;
+	gap: 20px;
+}
+
+.block:nth-child(4){
+	flex-wrap: wrap-reverse;
+	justify-content: space-evenly;
+}
+
+.block:nth-child(5){
+	justify-content: space-between;
+}
+
+
+.block:nth-child(6) .block__item:nth-child(1){
+	width: 100px;
+	height: 100px;
+}
+
+
+.block:nth-child(6) .block__item:nth-child(2){
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	align-self: flex-end;
+	flex-basis: 400px;
+}
+
+.block:nth-child(6) .block__item:nth-child(4){
+	width: 100px;
+	height: 100px;
+	background-color: rgb(255, 0, 81);
+	align-self: center;
+}
+
+
+.block__item:nth-child(1){
+	width: 200px;
+	height: 200px;
+	background-color: rgb(250, 212, 0);
+}
+
+.block__item:nth-child(2){
+	width: 200px;
+	height: 200px;
+	background-color: rgb(250, 92, 0);
+}
+.block__item:nth-child(3){
+	width: 200px;
+	height: 200px;
+	background-color: rgb(117, 250, 0);
+}
+.block__item:nth-child(4){
+	width: 200px;
+	height: 200px;
+	background-color: rgb(58, 88, 255);
+}
+
+.block:nth-child(1) .block__item:nth-child(2){
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 400px;
+}
+
+
+.title{
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.artical{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cards{
+	margin-top: 50px; 
+	margin-bottom: 50px; 
+	display: flex;
+}
+
+
+.cards__item{
+	background-color: grey;
+	padding: 57px;
+	min-height: 100%;
+}
+
+
+.item-card{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
+}
+
+.item-card__image img{
+	max-width: 100%; 
+}
+
+.cards__column{
+	flex: 0 1 33.333%;
+	padding: 0px 15px;
+}
+
+
+.item-card__text{
+	font-size: 20px;
+	flex-grow: 1;
+}
+
+
+
+
+.item-card__button{
+	width: 100px;
+	height: 50px;
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+
+
+.item-card__button a{
+	font-size: 30px;
+}
